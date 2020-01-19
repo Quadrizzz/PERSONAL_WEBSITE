@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+#header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    color: #f85103;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 2px 2px 3px grey;
+    padding: 10px;
+}
+
+#butt {
+    margin-right: 20px;
+    height: 40px;
+    font-weight: lighter;
+    font-size: large;
+    color: #f85103;
+    border-width: thin;
+    border-color: transparent;
+    margin-bottom: 5px;
+    background-color: transparent;
+    align-self: flex-start;
+    border-radius: 2px;
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+#butt ul>li {
+    padding: 5px;
+}
+
+#butt ul {
+    list-style-type: none;
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 10px;
+    display: none;
+}
+
+#butt:hover {
+    color: white;
+    background-color: #f85103;
+}
+
+#butt:hover ul {
+    background-color: #f85103;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+}
+
+#butt ul li:hover {
+    background-color: white;
+    color: #f85103;
+    border-radius: 2px;
+}
+
+#books,
+#Anthologies {
+    background-color: red;
+    display: none;
+    height: 300px;
+}
+
+#butt ul li:nth-child(1):hover #books {
+    display: block;
+}

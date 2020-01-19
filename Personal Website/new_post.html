@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NEW Post</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="new-post.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<div id="header">
+    <div class="container" onclick="count()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+
+</div>
+<div id="tools">
+    <label for="color">Color:</label>
+    <input type="color" name="color" id="color">
+    <label for="Fonts">Font:</label>
+    <select name="Fonts" id="fonts">
+            <option value="Credit">Credit Card</option>
+            <option value="Ecash">Paypal</option>
+    </select>
+    <label for="Style">Style:</label>
+    <select name="Style" id="style">
+        <option value="">Regular</option>
+        <option value="Bold" style="font-weight: bold;">Bold</option>
+        <option style="font-style: italic;">Italics</option>
+        <option value="" style="font-weight: bold; font-style : italic">Bold Italics</option>
+    </select>
+
+    <label for="Size">Font Size:</label>
+    <input type="range" name="Size" id="size" max="50" min="10">
+    <!-- <option  value="10pt">10</option>
+        <option value="20pt">20</option>
+        <option value="30pt">30</option>
+        <option value="40pt">40</option>
+        <option value="50pt">50</option>
+        <option value="60pt">60</option>
+        <option value="70pt">70</option> -->
+    </input>
+
+
+</div>
+
+<body>
+    <div>
+        <textarea name="content" id="content" cols="infinite" rows="10" placeholder="Input Text Here"></textarea>
+    </div>
+    <button id="post">Post</button>
+
+</body>
+
+
+</html>

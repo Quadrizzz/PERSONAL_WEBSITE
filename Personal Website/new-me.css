@@ -1,0 +1,200 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Fontrust.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+#header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    color: #f85103;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 2px 2px 3px grey;
+    padding: 10px;
+    animation: fade;
+    animation-duration: 3s;
+}
+
+#butt {
+    margin-right: 20px;
+    height: 50px;
+    font-weight: lighter;
+    font-size: large;
+    color: #f85103;
+    border-width: thin;
+    border-color: transparent;
+    margin-bottom: 5px;
+    background-color: transparent;
+    align-self: flex-start;
+    border-radius: 2px;
+}
+
+#butt:hover {
+    color: white;
+    background-color: #f85103;
+}
+
+#main-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#test {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #f85103;
+    animation: flick;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    transition: ease-in;
+    margin-top: 300px;
+    margin-left: 500px;
+}
+
+#me {
+    background-image: url(myself.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    margin-top: 60px;
+    padding: 10em;
+    display: none;
+    animation: fade;
+    animation-duration: 5s;
+}
+
+.me {
+    animation: fade 5s;
+}
+
+#me h1,
+#me p {
+    color: #f85103;
+    text-shadow: 2px 2px 3px grey;
+    display: none;
+}
+
+#me div {
+    border-left-width: thick;
+    border-left-style: solid;
+    border-left-color: #f85103;
+    padding: 5px;
+    height: 170px;
+}
+
+#me button {
+    height: 40px;
+    width: 130px;
+    font-size: large;
+    border-radius: 3px;
+    background-color: #f85103;
+    color: white;
+    border-width: thin;
+    border-color: transparent;
+    display: none;
+}
+
+#h1 {
+    margin-left: 300px;
+    margin-top: 20px;
+    font-family: myFirstFont;
+    font-size: 40pt;
+    color: rgb(6, 40, 102);
+}
+
+#profile {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+ul {
+    color: #f85103;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 10pt;
+    padding: 20px;
+    list-style-position: inside;
+    list-style-type: none;
+    padding-top: 7px;
+}
+
+p {
+    font-size: smaller;
+    color: white;
+}
+
+li {
+    margin: 0.3em 0;
+    padding-right: .6em;
+    margin-bottom: 5px;
+    padding-left: .6em;
+}
+
+footer {
+    background-color: white;
+    margin-top: 100px;
+    height: 250px;
+    display: none;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0px -2px 3px grey;
+    animation: fade;
+    animation-duration: 5s;
+}
+
+footer ul {
+    cursor: pointer;
+}
+
+footer h3,
+footer p {
+    color: #f85103;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes flick {
+    from {
+        background-color: #f85103;
+    }
+    to {
+        background-color: rgb(3, 47, 77);
+    }
+}
